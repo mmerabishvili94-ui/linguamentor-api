@@ -1,0 +1,917 @@
+[
+    {
+        "word": "run",
+        "translation": "бежать",
+        "type": "verb",
+        "level": "A1",
+        "definition": "To move at a speed faster than walking",
+        "example": "I run every morning."
+    },
+    {
+        "word": "eat",
+        "translation": "есть",
+        "type": "verb",
+        "level": "A1",
+        "definition": "To put food into your mouth and swallow it",
+        "example": "I eat breakfast at 8 AM."
+    },
+    {
+        "word": "sleep",
+        "translation": "спать",
+        "type": "verb",
+        "level": "A1",
+        "definition": "To rest your mind and body, usually at night",
+        "example": "I sleep 8 hours a day."
+    },
+    {
+        "word": "happy",
+        "translation": "счастливый",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Feeling or showing pleasure",
+        "example": "She looks very happy."
+    },
+    {
+        "word": "sad",
+        "translation": "грустный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Unhappy or sorry",
+        "example": "The movie was sad."
+    },
+    {
+        "word": "fast",
+        "translation": "быстрый",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Moving or happening quickly",
+        "example": "This car is very fast."
+    },
+    {
+        "word": "slow",
+        "translation": "медленный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not moving or happening quickly",
+        "example": "Turtles are slow."
+    },
+    {
+        "word": "time",
+        "translation": "время",
+        "type": "noun",
+        "level": "A1",
+        "definition": "What is measured in minutes, hours, days, etc.",
+        "example": "What time is it?"
+    },
+    {
+        "word": "person",
+        "translation": "человек",
+        "type": "noun",
+        "level": "A1",
+        "definition": "A human being",
+        "example": "He is a nice person."
+    },
+    {
+        "word": "year",
+        "translation": "год",
+        "type": "noun",
+        "level": "A1",
+        "definition": "A period of 365 days",
+        "example": "Next year I will travel."
+    },
+    {
+        "word": "way",
+        "translation": "путь",
+        "type": "noun",
+        "level": "A1",
+        "definition": "A route, direction, or path",
+        "example": "Do you know the way?"
+    },
+    {
+        "word": "day",
+        "translation": "день",
+        "type": "noun",
+        "level": "A1",
+        "definition": "A period of 24 hours",
+        "example": "Have a nice day!"
+    },
+    {
+        "word": "think",
+        "translation": "думать",
+        "type": "verb",
+        "level": "A1",
+        "definition": "To have an opinion or belief",
+        "example": "I think it is good."
+    },
+    {
+        "word": "see",
+        "translation": "видеть",
+        "type": "verb",
+        "level": "A1",
+        "definition": "To perceive with the eyes",
+        "example": "I see a bird."
+    },
+    {
+        "word": "good",
+        "translation": "хороший",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "High quality or acceptable",
+        "example": "The food is good."
+    },
+    {
+        "word": "new",
+        "translation": "новый",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not existing before",
+        "example": "I have a new phone."
+    },
+    {
+        "word": "first",
+        "translation": "первый",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Coming before all others",
+        "example": "This is my first time."
+    },
+    {
+        "word": "last",
+        "translation": "последний",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Coming after all others",
+        "example": "It is the last day."
+    },
+    {
+        "word": "long",
+        "translation": "длинный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Measuring a great distance from end to end",
+        "example": "It's a long way."
+    },
+    {
+        "word": "great",
+        "translation": "великолепный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Very good",
+        "example": "You did a great job."
+    },
+    {
+        "word": "little",
+        "translation": "маленький",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Small in size or amount",
+        "example": "I have a little dog."
+    },
+    {
+        "word": "own",
+        "translation": "собственный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Belonging to oneself",
+        "example": "I have my own room."
+    },
+    {
+        "word": "other",
+        "translation": "другой",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Additional or different",
+        "example": "Do you have any other questions?"
+    },
+    {
+        "word": "old",
+        "translation": "старый",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Having lived for a long time",
+        "example": "He is an old man."
+    },
+    {
+        "word": "right",
+        "translation": "правильный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Correct or true",
+        "example": "You are right."
+    },
+    {
+        "word": "big",
+        "translation": "большой",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Large in size",
+        "example": "That is a big house."
+    },
+    {
+        "word": "high",
+        "translation": "высокий",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Measuring a great distance from bottom to top",
+        "example": "The mountain is high."
+    },
+    {
+        "word": "different",
+        "translation": "другой / разный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not the same",
+        "example": "They are very different."
+    },
+    {
+        "word": "small",
+        "translation": "маленький",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not large",
+        "example": "It is a small box."
+    },
+    {
+        "word": "large",
+        "translation": "крупный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Big",
+        "example": "A large amount of money."
+    },
+    {
+        "word": "next",
+        "translation": "следующий",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Coming immediately after",
+        "example": "See you next week."
+    },
+    {
+        "word": "early",
+        "translation": "ранний",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Before the usual time",
+        "example": "I woke up early."
+    },
+    {
+        "word": "young",
+        "translation": "молодой",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not old",
+        "example": "She is young."
+    },
+    {
+        "word": "important",
+        "translation": "важный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Having great value",
+        "example": "This is important."
+    },
+    {
+        "word": "few",
+        "translation": "мало",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not many",
+        "example": "I have a few friends."
+    },
+    {
+        "word": "public",
+        "translation": "публичный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "For everyone",
+        "example": "Public transport."
+    },
+    {
+        "word": "bad",
+        "translation": "плохой",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Not good",
+        "example": "This is bad news."
+    },
+    {
+        "word": "same",
+        "translation": "тот же",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Identical",
+        "example": "We have the same shirt."
+    },
+    {
+        "word": "able",
+        "translation": "способный",
+        "type": "adjective",
+        "level": "A1",
+        "definition": "Having the power to do something",
+        "example": "I am able to swim."
+    },
+    {
+        "word": "achieve",
+        "translation": "достигать",
+        "pronunciation": "эчив",
+        "type": "verb",
+        "level": "B1",
+        "definition": "To successfully complete something or get a good result, especially by working hard",
+        "example": "She worked hard to achieve her goals."
+    },
+    {
+        "word": "negotiate",
+        "translation": "вести переговоры",
+        "pronunciation": "нигоушиэйт",
+        "type": "verb",
+        "level": "B2",
+        "definition": "To have formal discussions with someone in order to reach an agreement",
+        "example": "We need to negotiate a better deal."
+    },
+    {
+        "word": "ambitious",
+        "translation": "амбициозный",
+        "pronunciation": "эмбишэс",
+        "type": "adjective",
+        "level": "B1",
+        "definition": "Having or showing a strong desire and determination to succeed",
+        "example": "He is an ambitious young lawyer."
+    },
+    {
+        "word": "consequence",
+        "translation": "последствие",
+        "pronunciation": "консиквенс",
+        "type": "noun",
+        "level": "B1",
+        "definition": "A result of a particular action or situation, often one that is bad or not convenient",
+        "example": "You have to accept the consequences of your actions."
+    },
+    {
+        "word": "reliable",
+        "translation": "надежный",
+        "pronunciation": "рилайбл",
+        "type": "adjective",
+        "level": "B1",
+        "definition": "Can be trusted or believed because he, she, or it works or behaves well in the way you expect",
+        "example": "My car is very reliable."
+    },
+    {
+        "word": "evaluate",
+        "translation": "оценивать",
+        "pronunciation": "ивэльюэйт",
+        "type": "verb",
+        "level": "C1",
+        "definition": "To judge or calculate the quality, importance, amount, or value of something",
+        "example": "We need to evaluate the success of the campaign."
+    },
+    {
+        "word": "hesitate",
+        "translation": "колебаться / стесняться",
+        "pronunciation": "хезитэйт",
+        "type": "verb",
+        "level": "B2",
+        "definition": "To pause before you do or say something, often because you are uncertain or nervous",
+        "example": "Don't hesitate to contact me."
+    },
+    {
+        "word": "improvement",
+        "translation": "улучшение",
+        "pronunciation": "импрувмент",
+        "type": "noun",
+        "level": "B1",
+        "definition": "An occasion when something gets better or when you make it better",
+        "example": "There is a definite improvement in your work."
+    },
+    {
+        "word": "maintain",
+        "translation": "поддерживать",
+        "pronunciation": "мэйнтейн",
+        "type": "verb",
+        "level": "B2",
+        "definition": "To continue to have; to keep in existence, or not allow to become less",
+        "example": "We need to maintain high standards."
+    },
+    {
+        "word": "necessary",
+        "translation": "необходимый",
+        "pronunciation": "нэсэсери",
+        "type": "adjective",
+        "level": "A2",
+        "definition": "Needed in order to achieve a particular result",
+        "example": "Is it necessary to book in advance?"
+    },
+    {
+        "word": "obvious",
+        "translation": "очевидный",
+        "pronunciation": "обвиэс",
+        "type": "adjective",
+        "level": "B1",
+        "definition": "Easy to see, recognize, or understand",
+        "example": "It's obvious that he likes you."
+    },
+    {
+        "word": "participate",
+        "translation": "участвовать",
+        "pronunciation": "партисипэйт",
+        "type": "verb",
+        "level": "B1",
+        "definition": "To take part in or become involved in an activity",
+        "example": "She didn't participate in the discussion."
+    },
+    {
+        "word": "quality",
+        "translation": "качество",
+        "pronunciation": "кволити",
+        "type": "noun",
+        "level": "A2",
+        "definition": "How good or bad something is",
+        "example": "The quality of the food was poor."
+    },
+    {
+        "word": "reduce",
+        "translation": "сокращать",
+        "pronunciation": "ридьюс",
+        "type": "verb",
+        "level": "B1",
+        "definition": "To become or to make something become smaller in size, amount, degree, importance, etc.",
+        "example": "We must reduce our expenses."
+    },
+    {
+        "word": "strategy",
+        "translation": "стратегия",
+        "pronunciation": "стрэтэджи",
+        "type": "noun",
+        "level": "B1",
+        "definition": "A detailed plan for achieving success in situations such as war, politics, business, industry, or sport",
+        "example": "We need a new business strategy."
+    },
+    {
+        "word": "tendency",
+        "translation": "тенденция / склонность",
+        "pronunciation": "тэндэнси",
+        "type": "noun",
+        "level": "C1",
+        "definition": "If someone has a tendency to do or like something, they will probably do it or like it",
+        "example": "There is a tendency to avoid difficult topics."
+    },
+    {
+        "word": "uncertain",
+        "translation": "неуверенный / неопределенный",
+        "pronunciation": "ансёртн",
+        "type": "adjective",
+        "level": "B2",
+        "definition": "Not knowing what to do or believe, or not able to decide about something",
+        "example": "I am uncertain about what to do next."
+    },
+    {
+        "word": "valuable",
+        "translation": "ценный",
+        "pronunciation": "вэльюбл",
+        "type": "adjective",
+        "level": "B1",
+        "definition": "Worth a lot of money",
+        "example": "This ring is very valuable."
+    },
+    {
+        "word": "wander",
+        "translation": "бродить",
+        "pronunciation": "вондэр",
+        "type": "verb",
+        "level": "C1",
+        "definition": "To walk around slowly in a relaxed way or without any clear purpose or direction",
+        "example": "We wandered around the city."
+    },
+    {
+        "word": "yield",
+        "translation": "уступать / приносить (плоды)",
+        "pronunciation": "йилд",
+        "type": "verb",
+        "level": "C2",
+        "definition": "To supply or produce something positive such as a profit, an amount of food or information",
+        "example": "The investigation yielded some interesting results."
+    },
+    {
+        "word": "zealous",
+        "translation": "рвение / усердный",
+        "pronunciation": "зёлэс",
+        "type": "adjective",
+        "level": "C2",
+        "definition": "Enthusiastic and eager",
+        "example": "He is a zealous supporter of the cause."
+    },
+    {
+        "word": "abrupt",
+        "translation": "резкий",
+        "pronunciation": "эбрапт",
+        "type": "adjective",
+        "level": "C1",
+        "definition": "Sudden and unexpected, and often unpleasant",
+        "example": "Our conversation came to an abrupt end."
+    },
+    {
+        "word": "benevolent",
+        "translation": "доброжелательный",
+        "pronunciation": "бэнэволэнт",
+        "type": "adjective",
+        "level": "C1",
+        "definition": "Kind and helpful",
+        "example": "He was a benevolent old man."
+    },
+    {
+        "word": "candid",
+        "translation": "искренний / прямой",
+        "pronunciation": "кэндид",
+        "type": "adjective",
+        "level": "C2",
+        "definition": "Honest and telling the truth, especially about something difficult or painful",
+        "example": "To be candid with you, I think you're making a mistake."
+    },
+    {
+        "word": "dilemma",
+        "translation": "дилемма",
+        "pronunciation": "дилэмма",
+        "type": "noun",
+        "level": "B2",
+        "definition": "A situation in which a difficult choice has to be made between two or more alternatives",
+        "example": "I'm facing a moral dilemma."
+    },
+    {
+        "word": "eloquent",
+        "translation": "красноречивый",
+        "pronunciation": "элоквэнт",
+        "type": "adjective",
+        "level": "C1",
+        "definition": "Giving a clear, strong message",
+        "example": "She made an eloquent speech."
+    },
+    {
+        "word": "fluctuate",
+        "translation": "колебаться",
+        "pronunciation": "флакчуэйт",
+        "type": "verb",
+        "level": "C1",
+        "definition": "To change over a specific period of time",
+        "example": "Prices fluctuate effectively."
+    },
+    {
+        "word": "genuine",
+        "translation": "подлинный / искренний",
+        "pronunciation": "дженьюин",
+        "type": "adjective",
+        "level": "B2",
+        "definition": "If something is genuine, it is real and exactly what it appears to be",
+        "example": "It is a genuine leather jacket."
+    },
+    {
+        "word": "hypothesis",
+        "translation": "гипотеза",
+        "pronunciation": "хайпотэсис",
+        "type": "noun",
+        "level": "C1",
+        "definition": "An idea or explanation for something that is based on known facts but has not yet been proved",
+        "example": "Several hypotheses for the accident have been suggested."
+    },
+    {
+        "word": "inevitable",
+        "translation": "неизбежный",
+        "pronunciation": "ин'эвитэбл",
+        "type": "adjective",
+        "level": "C1",
+        "definition": "Certain to happen and unable to be avoided or prevented",
+        "example": "The accident was the inevitable consequence/result of carelessness."
+    },
+    {
+        "word": "justify",
+        "translation": "оправдывать",
+        "pronunciation": "джастифай",
+        "type": "verb",
+        "level": "B2",
+        "definition": "To show that there is a good reason for something, especially something that other people think is wrong",
+        "example": "He tried to justify his behavior."
+    },
+    {
+        "word": "itinerary",
+        "translation": "маршрут",
+        "pronunciation": "айтинэрари",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "travel"
+        ],
+        "definition": "A detailed plan or route of a journey",
+        "example": "We planned our itinerary carefully."
+    },
+    {
+        "word": "accommodation",
+        "translation": "размещение / жилье",
+        "pronunciation": "экомодэйшн",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "travel"
+        ],
+        "definition": "A place to live, work, stay, etc. in",
+        "example": "Hotel accommodation is included in the price."
+    },
+    {
+        "word": "departure",
+        "translation": "отправление",
+        "pronunciation": "дипарчэр",
+        "type": "noun",
+        "level": "A2",
+        "tags": [
+            "travel"
+        ],
+        "definition": "The act of leaving a place",
+        "example": "Our departure time is 8 a.m."
+    },
+    {
+        "word": "luggage",
+        "translation": "багаж",
+        "pronunciation": "лагидж",
+        "type": "noun",
+        "level": "A2",
+        "tags": [
+            "travel"
+        ],
+        "definition": "The bags, suitcases, etc. that contain your possessions and that you take with you when you are travelling",
+        "example": "We have too much luggage."
+    },
+    {
+        "word": "destination",
+        "translation": "пункт назначения",
+        "pronunciation": "дэстинэйшн",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "travel"
+        ],
+        "definition": "The place where someone is going or where something is being sent or taken",
+        "example": "We arrived at our destination tired and hungry."
+    },
+    {
+        "word": "passenger",
+        "translation": "пассажир",
+        "pronunciation": "пэсинджэр",
+        "type": "noun",
+        "level": "A2",
+        "tags": [
+            "travel"
+        ],
+        "definition": "A person who is travelling in a vehicle but is not driving it, flying it, or working on it",
+        "example": "The plane was carrying 200 passengers."
+    },
+    {
+        "word": "customs",
+        "translation": "таможня",
+        "pronunciation": "кастэмз",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "travel"
+        ],
+        "definition": "The place at a port, airport, or border where travelers' bags are examined for illegal or taxable goods",
+        "example": "It took us a long time to get through customs."
+    },
+    {
+        "word": "proposal",
+        "translation": "предложение",
+        "pronunciation": "прэпоузэл",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "A suggestion, sometimes a written one",
+        "example": "They rejected our proposal."
+    },
+    {
+        "word": "deadline",
+        "translation": "срок",
+        "pronunciation": "дэдлайн",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A time or day by which something must be done",
+        "example": "The deadline for applications is May 31st."
+    },
+    {
+        "word": "agenda",
+        "translation": "повестка дня",
+        "pronunciation": "эдженда",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "A list of matters to be discussed at a meeting",
+        "example": "There were several important items on the agenda."
+    },
+    {
+        "word": "budget",
+        "translation": "бюджет",
+        "pronunciation": "баджет",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A plan to show how much money a person or organization will earn and how much they will need or be able to spend",
+        "example": "The project went over budget."
+    },
+    {
+        "word": "salary",
+        "translation": "зарплата",
+        "pronunciation": "сэлари",
+        "type": "noun",
+        "level": "A2",
+        "tags": [
+            "business"
+        ],
+        "definition": "A fixed amount of money agreed every year as pay for an employee",
+        "example": "She receives a good salary."
+    },
+    {
+        "word": "contract",
+        "translation": "контракт",
+        "pronunciation": "контрэкт",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A legal document that states and explains a formal agreement between two different people or groups",
+        "example": "We signed the contract yesterday."
+    },
+    {
+        "word": "revenue",
+        "translation": "выручка",
+        "pronunciation": "рэвэнъю",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "Money that a company receives, especially from selling goods or services",
+        "example": "Taxes provide most of the government's revenue."
+    },
+    {
+        "word": "colleague",
+        "translation": "коллега",
+        "pronunciation": "колиг",
+        "type": "noun",
+        "level": "A2",
+        "tags": [
+            "business"
+        ],
+        "definition": "One of a group of people who work together",
+        "example": "We're entertaining some colleagues tonight."
+    },
+    {
+        "word": "executive",
+        "translation": "руководитель",
+        "pronunciation": "игзэкьютив",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "Someone in a high position, especially in business, who makes decisions and puts them into action",
+        "example": "She is a senior executive at the firm."
+    },
+    {
+        "word": "asset",
+        "translation": "актив",
+        "pronunciation": "эсэт",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "Something valuable belonging to a person or organization that can be used for the payment of debts",
+        "example": "A company's assets can consist of cash, investments, specialist knowledge, or copyright material."
+    },
+    {
+        "word": "stakeholder",
+        "translation": "заинтересованная сторона",
+        "pronunciation": "стэйкхолдэр",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A person or group of people who own a share in a business",
+        "example": "All the stakeholders were invited to the meeting."
+    },
+    {
+        "word": "outsourcing",
+        "translation": "аутсорсинг",
+        "pronunciation": "аутсорсинг",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "The process of paying to have part of a company's work done by another company",
+        "example": "The management is considering outsourcing the marketing department."
+    },
+    {
+        "word": "liability",
+        "translation": "обязательство / ответственность",
+        "pronunciation": "лайабилити",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "Debts and pecuniary obligations",
+        "example": "The business has liabilities of 2 million euros."
+    },
+    {
+        "word": "merger",
+        "translation": "слияние компании",
+        "pronunciation": "мёрджэр",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "An occasion when two or more companies or organizations join together to make one larger company",
+        "example": "The merger of these two giant corporations was announced."
+    },
+    {
+        "word": "recruit",
+        "translation": "нанимать",
+        "pronunciation": "рикрут",
+        "type": "verb",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "To persuade someone to work for a company or become a new member of an organization",
+        "example": "Charities are looking to recruit volunteers."
+    },
+    {
+        "word": "entrepreneur",
+        "translation": "предприниматель",
+        "pronunciation": "антрпренёр",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "Someone who starts their own business, especially when this involves seeing a new opportunity",
+        "example": "He was quite a successful entrepreneur."
+    },
+    {
+        "word": "strategy",
+        "translation": "стратегия",
+        "pronunciation": "стрэтэджи",
+        "type": "noun",
+        "level": "B2",
+        "tags": [
+            "business"
+        ],
+        "definition": "A detailed plan for achieving success in situations such as war, politics, business, industry, or sport",
+        "example": "The company's marketing strategy was brilliant."
+    },
+    {
+        "word": "invoice",
+        "translation": "счет-фактура",
+        "pronunciation": "инвойс",
+        "type": "noun",
+        "level": "B1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A list of things provided or work done together with their cost, for payment at a later time",
+        "example": "Invoices must be submitted by the 24th of every month."
+    },
+    {
+        "word": "trademark",
+        "translation": "торговая марка",
+        "pronunciation": "трэйдмарк",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A name or symbol on a product that shows it was made by a particular company, and that it cannot be used by other companies without permission",
+        "example": "Example is a registered trademark."
+    },
+    {
+        "word": "bankruptcy",
+        "translation": "банкротство",
+        "pronunciation": "бэнкраптси",
+        "type": "noun",
+        "level": "C1",
+        "tags": [
+            "business"
+        ],
+        "definition": "A situation in which a business or a person becomes unable to pay their debts",
+        "example": "The company filed for bankruptcy in 2023."
+    }
+]

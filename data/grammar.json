@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pill_make_do",
+        "title": "Make vs Do",
+        "icon": "🔨",
+        "description": "Create vs Perform",
+        "content": [
+            {
+                "type": "text",
+                "text": "**DO** is for actions, jobs, and tasks. It is often used when we refer to the action in general without being specific."
+            },
+            {
+                "type": "example",
+                "text": "do homework, do the dishes, do business"
+            },
+            {
+                "type": "text",
+                "text": "**MAKE** is for producing, constructing, creating, or building something new."
+            },
+            {
+                "type": "example",
+                "text": "make breakfast, make a decision, make a mistake"
+            }
+        ]
+    },
+    {
+        "id": "pill_in_on_at",
+        "title": "In / On / At (Time)",
+        "icon": "⏰",
+        "description": "Prepositions of Time",
+        "content": [
+            {
+                "type": "text",
+                "text": "**AT** is for precise times."
+            },
+            {
+                "type": "example",
+                "text": "at 3 o'clock, at noon, at bedtime"
+            },
+            {
+                "type": "text",
+                "text": "**ON** is for days and dates."
+            },
+            {
+                "type": "example",
+                "text": "on Sunday, on my birthday, on December 25th"
+            },
+            {
+                "type": "text",
+                "text": "**IN** is for months, years, centuries, and long periods."
+            },
+            {
+                "type": "example",
+                "text": "in May, in 2024, in the summer"
+            }
+        ]
+    },
+    {
+        "id": "pill_a_the",
+        "title": "A / An vs The",
+        "icon": "🍎",
+        "description": "Articles Basics",
+        "content": [
+            {
+                "type": "text",
+                "text": "**A / An** (Indefinite): Used for something general or mentioned for the first time."
+            },
+            {
+                "type": "example",
+                "text": "I saw **a** dog. (Any dog)"
+            },
+            {
+                "type": "text",
+                "text": "**The** (Definite): Used for something specific or already known."
+            },
+            {
+                "type": "example",
+                "text": "**The** dog was cute. (That specific dog we just mentioned)"
+            }
+        ]
+    }
+]
