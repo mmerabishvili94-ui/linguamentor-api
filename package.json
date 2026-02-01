@@ -11,7 +11,7 @@
     "engines": {
         "node": "20"
     },
-    "main": "index.js",
+    "main": "server.js",
     "dependencies": {
         "@google-cloud/text-to-speech": "^6.4.0",
         "@google/generative-ai": "^0.24.1",
