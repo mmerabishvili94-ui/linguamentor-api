@@ -13,7 +13,6 @@
     },
     "main": "server.js",
     "dependencies": {
-        "@google-cloud/text-to-speech": "^6.4.0",
         "@google/generative-ai": "^0.24.1",
         "body-parser": "^2.2.2",
         "cors": "^2.8.5",

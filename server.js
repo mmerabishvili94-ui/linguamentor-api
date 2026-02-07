@@ -1,7 +1,6 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const OpenAI = require("openai");
-const { TextToSpeechClient } = require('@google-cloud/text-to-speech');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -29,10 +28,16 @@ const db = admin.firestore();
 // Config
 const OWNER_TELEGRAM_ID = 102436862;
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const YANDEX_SPEECHKIT_API_KEY = process.env.YANDEX_SPEECHKIT_API_KEY;
+const YANDEX_FOLDER_ID = process.env.YANDEX_FOLDER_ID;
 
 if (!OPENROUTER_API_KEY) {
     console.error("ERROR: OPENROUTER_API_KEY not set!");
     process.exit(1);
+}
+
+if (!YANDEX_SPEECHKIT_API_KEY) {
+    console.warn("WARNING: YANDEX_SPEECHKIT_API_KEY not set! TTS will not work.");
 }
 
 // Initialize OpenRouter (OpenAI-compatible API)
@@ -310,7 +315,7 @@ app.post('/getChatHistory', async (req, res) => {
     }
 });
 
-// ===== SPEAK (Text-to-Speech) =====
+// ===== SPEAK (Text-to-Speech via Yandex SpeechKit) =====
 app.post('/speak', async (req, res) => {
     const requestData = req.body.data || req.body;
     const text = requestData.text;
@@ -320,50 +325,66 @@ app.post('/speak', async (req, res) => {
         return res.status(400).json({ error: "No text provided" });
     }
 
-    try {
-        const client = new TextToSpeechClient({
-            keyFilename: './linguamentor-d432c-firebase-adminsdk-fbsvc-fc3417fa8e.json'
-        });
+    if (!YANDEX_SPEECHKIT_API_KEY || !YANDEX_FOLDER_ID) {
+        return res.status(500).json({ error: "Yandex SpeechKit not configured" });
+    }
 
-        let voiceConfig;
+    try {
+        // Select voice based on language
+        // Yandex voices: https://yandex.cloud/en/docs/speechkit/tts/voices
+        let voice, lang;
 
         switch (language) {
             case 'it':
-                voiceConfig = {
-                    languageCode: 'it-IT',
-                    name: 'it-IT-Wavenet-D',
-                    ssmlGender: 'MALE'
-                };
+                // Yandex doesn't have Italian, use English
+                voice = 'john'; // English male voice
+                lang = 'en-US';
                 break;
-
+            case 'ru':
+                voice = 'filipp'; // Russian male voice
+                lang = 'ru-RU';
+                break;
             case 'en':
             default:
-                voiceConfig = {
-                    languageCode: 'en-US',
-                    name: 'en-US-Wavenet-D',
-                    ssmlGender: 'MALE'
-                };
+                voice = 'john'; // English male voice
+                lang = 'en-US';
         }
 
-        console.log('[TTS]', { lang: language, voice: voiceConfig.name });
+        console.log('[Yandex TTS]', { lang, voice, textLength: text.length });
 
-        const googleRequest = {
-            input: { text: text },
-            voice: voiceConfig,
-            audioConfig: {
-                audioEncoding: 'MP3',
-                speakingRate: 0.85
-            }
-        };
+        // Yandex SpeechKit API v1
+        const params = new URLSearchParams({
+            text: text,
+            lang: lang,
+            voice: voice,
+            format: 'mp3',
+            speed: '0.9',
+            folderId: YANDEX_FOLDER_ID
+        });
 
-        const [googleResponse] = await client.synthesizeSpeech(googleRequest);
+        const response = await fetch('https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Api-Key ${YANDEX_SPEECHKIT_API_KEY}`,
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: params.toString()
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error('Yandex TTS Error:', response.status, errorText);
+            throw new Error(`Yandex TTS returned ${response.status}: ${errorText}`);
+        }
+
+        const audioBuffer = Buffer.from(await response.arrayBuffer());
 
         res.set('Content-Type', 'audio/mpeg');
-        res.send(googleResponse.audioContent);
+        res.send(audioBuffer);
 
     } catch (error) {
-        console.error("Google TTS Error", error);
-        res.status(500).json({ error: "Google TTS Failed: " + error.message });
+        console.error("Yandex TTS Error", error);
+        res.status(500).json({ error: "Yandex TTS Failed: " + error.message });
     }
 });
 
