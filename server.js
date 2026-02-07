@@ -322,7 +322,7 @@ app.post('/speak', async (req, res) => {
 
     try {
         const client = new TextToSpeechClient({
-            keyFilename: './linguamentor-d432c-5d44333a0382.json'
+            keyFilename: './linguamentor-d432c-firebase-adminsdk-fbsvc-fc3417fa8e.json'
         });
 
         let voiceConfig;
