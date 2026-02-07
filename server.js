@@ -20,7 +20,17 @@ app.use(express.static(path.join(__dirname, '../public')));
 let serviceAccount;
 
 if (process.env.FIREBASE_SERVICE_ACCOUNT) {
-    serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+    try {
+        let jsonStr = process.env.FIREBASE_SERVICE_ACCOUNT;
+        // Fix potential double-escaped newlines from some env var editors
+        if (jsonStr.includes('\\n')) {
+            jsonStr = jsonStr.replace(/\\n/g, '\n');
+        }
+        serviceAccount = JSON.parse(jsonStr);
+        console.log("Successfully parsed FIREBASE_SERVICE_ACCOUNT from env");
+    } catch (e) {
+        console.error("Failed to parse FIREBASE_SERVICE_ACCOUNT:", e.message);
+    }
 } else {
     try {
         serviceAccount = require("./linguamentor-d432c-firebase-adminsdk-fbsvc-ce9238d805.json");
@@ -364,7 +374,13 @@ app.post('/speak', async (req, res) => {
                 lang = 'en-US';
         }
 
-        console.log('[Yandex TTS]', { lang, voice, textLength: text.length });
+        const authHeader = `Api-Key ${YANDEX_SPEECHKIT_API_KEY}`;
+        console.log('[Yandex TTS]', {
+            lang,
+            voice,
+            textLength: text.length,
+            keyPrefix: YANDEX_SPEECHKIT_API_KEY ? YANDEX_SPEECHKIT_API_KEY.substring(0, 5) + '...' : 'NONE'
+        });
 
         // Yandex SpeechKit API v1
         const params = new URLSearchParams({
@@ -398,7 +414,10 @@ app.post('/speak', async (req, res) => {
 
     } catch (error) {
         console.error("Yandex TTS Error", error);
-        res.status(500).json({ error: "Yandex TTS Failed: " + error.message });
+        res.status(500).json({
+            error: "Yandex TTS Failed: " + error.message,
+            keyPrefix: YANDEX_SPEECHKIT_API_KEY ? YANDEX_SPEECHKIT_API_KEY.substring(0, 5) + '...' : 'NONE'
+        });
     }
 });
 
