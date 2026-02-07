@@ -17,11 +17,25 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Initialize Firebase with Service Account
-const serviceAccount = require("./linguamentor-d432c-firebase-adminsdk-fbsvc-fc3417fa8e.json");
+let serviceAccount;
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-});
+if (process.env.FIREBASE_SERVICE_ACCOUNT) {
+    serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+} else {
+    try {
+        serviceAccount = require("./linguamentor-d432c-firebase-adminsdk-fbsvc-ce9238d805.json");
+    } catch (e) {
+        console.warn("Local service account file not found, taking no action.");
+    }
+}
+
+if (serviceAccount) {
+    admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount)
+    });
+} else {
+    console.error("Firebase credentials not found!");
+}
 
 const db = admin.firestore();
 
